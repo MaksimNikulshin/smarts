@@ -1,0 +1,9 @@
+_ admin:MsgAddressInt router:MsgAddressInt market:MsgAddressInt next:^[ market_fee:uint64 min_bet:Coins jetton_amount:Coins ephemeral_jetton_balance:Coins
+ephemeral_ton_amount:Coins fee:Coins active:Bool finished:Bool next:^ [ jetton_wallet:MsgAddressInt jetton_wallet_wrap:MsgAddressInt ] ] = MasterStorage;
+
+buy#402eff0b query_id:uint64 = InternalMsgBody;
+sell#13a660ec = ForwardPayload;
+swap#3cdf0868 = ForwardPayload;
+confirm#7a435aed query_id:uint64 = InternalMsgBody;
+set_data#7a88020a query_id:uint64 jetton_wallet:MsgAddressInt router:MsgAddressInt = InternalMsgBody;
+get_fee#06b5e556 query_id:uint64 prise_pool:MsgAddressInt = InternalMsgBody;

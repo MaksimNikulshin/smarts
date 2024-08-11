@@ -1,0 +1,23 @@
+const int op::buy = 0x402eff0b;
+const int op::set_data = 0x7a88020a;
+const int op::get_fee = 0x06b5e556;
+const int op::confirm = 0x7a435aed;
+const int op::sell = 0x13a660ec;
+const int op::swap = 0x3cdf0868;
+const int op::provide_liquidity = 1;
+
+const int op::jetton::transfer_notification = 0x7362d09c;
+const int op::jetton::transfer = 0x0f8a7ea5;
+const int op::jetton::burn = 0x595f07bc;
+
+const int error::wrong_sender = 701;
+const int error::data_already_set = 702;
+const int error::not_enough_tons = 703;
+const int error::not_active = 704;
+const int error::not_enough_jettons = 705;
+const int error::finished = 706;
+
+const int const::e9 = 1000000000;
+const int const::e3 = 1000;
+const int const::fee_const = 50000;
+const int const::fee_const_min = 50000 / 2;
